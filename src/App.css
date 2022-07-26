@@ -228,6 +228,10 @@ header {
 
 /* ================== DATA SECTION ================== */
 
+.data__container {
+    padding: 2.4rem 0;
+}
+
 .data__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -241,6 +245,10 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.data__list li img {
+    filter: grayscale(100%);
 }
 
 

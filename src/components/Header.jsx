@@ -24,7 +24,7 @@ function Header() {
             <img src={header} alt="blockchain-header-img"/>
         </div>
     </header>
-        <section class="container data__container">
+        <section class="data__container">
         <ul class="data__list">
             <li><img src={ethereum} alt="ethereum-logo"/></li>
             <li><img src={binance} alt="binance-logo"/></li>
