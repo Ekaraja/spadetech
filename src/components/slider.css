@@ -2,7 +2,7 @@
     width: 100%;
     height: 100%;
     background: #000;
-/*     border: 3px solid red; */
+    /*     border: 3px solid red; */
     display: flex;
 }
 
@@ -12,7 +12,7 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
     padding: 6.5rem 8vw;
-/*     border: 3px solid yellow; */
+    /*     border: 3px solid yellow; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -39,7 +39,7 @@
 }
 
 .swiper-slide .text {
-    font-size: 2rem;
+    font-size: 2.1rem;
     width: 100%;
     line-height: 1.3;
     display: flex;
@@ -51,21 +51,6 @@
     margin: 0;
 }
 
-
-.swiper-button-prev {
-    content: url("../assets/slider/slide-arrow.svg");
-    transform: scaleX(-1) scale(2);
-    left: 86% !important;
-    top: 77% !important;
-}
-
-.swiper-button-next {
-    left: 91% !important;
-    top: 77% !important;
-    transform-origin: left center;
-    content: url("../assets/slider/slide-arrow.svg");
-    transform: scale(2);
-}
 
 .author {
     display: flex;
@@ -103,4 +88,58 @@
     color: #EF798A;
     font-size: 16px;
     position: absolute;
+}
+
+.swiper-button-prev {
+    content: url("../assets/slider/slide-arrow.svg");
+    transform: scaleX(-1) scale(2);
+    left: 86% !important;
+    top: 77% !important;
+}
+
+.swiper-button-next {
+    left: 91% !important;
+    top: 77% !important;
+    transform-origin: left center;
+    content: url("../assets/slider/slide-arrow.svg");
+    transform: scale(2);
+}
+
+@media screen and (max-width: 1380px) {
+    .swiper-button-prev {
+        left: 82% !important;
+    }
+
+    .swiper-button-next {
+        left: 88% !important;
+    }
+}
+
+@media screen and (max-width: 940px) {
+    .swiper-button-prev {
+        left: 75% !important;
+    }
+
+    .swiper-button-next {
+        left: 84% !important;
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+
+    .swiper-button-prev {
+        left: 10% !important;
+        top: 82% !important;
+    }
+
+    .swiper-button-next {
+        left: 26% !important;
+        top: 82% !important;
+    }
+
+    .swiper-slide .text {
+        font-size: 1.25rem;
+        padding-bottom: 2rem;
+    }
 }

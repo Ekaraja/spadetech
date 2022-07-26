@@ -25,6 +25,8 @@ export default function Slider() {
 				speed={600}
 				parallax={true}
 				navigation={true}
+				spaceBetween={0}
+				slidesPerView={1}
 				modules={[Parallax, Navigation]}
 				className="mySwiper"
 			>
@@ -35,6 +37,7 @@ export default function Slider() {
 					style={{
 						"background-image": `url(${sliderBg})`,
 						backgroundSize: "75%",
+						"margin":"0",
 					}}
 					data-swiper-parallax="-23%"
 				>
