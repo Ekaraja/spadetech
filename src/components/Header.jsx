@@ -1,4 +1,3 @@
-import header from "../assets/icons/header.svg";
 import ethereum from "../assets/icons/ethereum.svg";
 import binance from "../assets/icons/binance.svg";
 import solana from "../assets/icons/solana.svg";
