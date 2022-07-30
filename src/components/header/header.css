@@ -1,0 +1,134 @@
+/* ================================================== */
+/* ===================== HEADER ===================== */
+/* ================================================== */
+
+
+.header {
+    background-image: url("../../assets/icons/bg.svg");
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header__container {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    align-items: center;
+    gap: 0;
+    color: var(--color-white);
+    background-color: var(--color-bg)
+}
+
+.header__desc--border {
+    line-height: 30px;
+    font-size: 20px;
+    border-left: 5px solid var(--color-active);
+    padding: 0 28px;
+    margin: 24px 0 32px;
+}
+
+.header__desc {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 29px;
+}
+
+.header__right {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* ABOUT HEADER */
+
+.about-header {
+    background-image: url("../../assets/img/about-bg.svg");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: var(--color-bg)
+}
+
+.about-header h2 {
+    color: var(--color-white);
+    text-align: center;
+    /* line-height: 58px; */
+}
+
+.about-header p {
+    color: var(--color-white);
+    border-left: none;
+    text-align: center;
+}
+
+/* ================================================== */
+/* =================== RESPONSIVE =================== */
+/* ================================================== */
+
+@media screen and (max-width: 1380px) {
+    .header__right {
+        transform: scale(.8);
+    }
+
+}
+
+
+@media screen and (max-width: 1075px) {
+    .header__container {
+        grid-template-columns: 55% 45%;
+    }
+
+    .header__right {
+        transform: scale(0.8);
+        padding: 0;
+    }
+    #hero {
+        transform: scale(0.8, 0.8);
+    }
+}
+
+
+@media screen and (max-width: 950px) {
+    .header__container {
+        grid-template-columns: 1fr;
+        gap: 0px;
+    }
+
+}
+
+
+@media screen and (max-width: 610px) {
+
+    .header__container h1 {
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .header__container h2 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+
+    .header__desc--border {
+        line-height: 24px;
+        font-size: 14px;
+        padding: 0 0 0 12px;
+        margin: 12 0 24px;
+    }
+    
+    .header__desc {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 20px;
+    }
+
+    .header__right {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header__right img {
+        max-width: 80%;
+    }
+}

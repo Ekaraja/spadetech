@@ -1,0 +1,13 @@
+.about-section__desc {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    line-height: 32px;
+}
+
+.about__sub-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8em;
+}

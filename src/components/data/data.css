@@ -1,0 +1,52 @@
+/* ================== DATA SECTION ================== */
+
+.data__container {
+    padding: 2.4rem 8%
+}
+
+.data__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.data__list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data__list li img {
+    filter: grayscale(100%);
+}
+
+
+
+/* ================================================== */
+/* =================== RESPONSIVE =================== */
+/* ================================================== */
+
+
+@media screen and (max-width: 940px) {
+
+    .data__list li img {
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 610px) {
+
+    .data__list {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        row-gap: 1.5rem;
+    }
+
+    .data__list li img {
+        transform: scale(.9);
+    }
+
+}

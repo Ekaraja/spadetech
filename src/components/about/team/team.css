@@ -1,0 +1,48 @@
+
+.team-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 220px;
+}
+
+.team-member {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.member {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+
+}
+
+.member-avatar { 
+    filter:  
+    drop-shadow(0px 2.77px 2.21px rgba(0, 0, 0, 1.97%))
+    drop-shadow(0px 6.65px 5.32px rgba(0, 0, 0, 2.83%)) 
+    drop-shadow(0px 12.52px 10.02px rgba(0, 0, 0, 3.5%)) 
+    drop-shadow(0px 22.34px 17.87px rgba(0, 0, 0, 4.17%)) 
+    drop-shadow(0px 41.78px 33.42px rgba(0, 0, 0, 5.03%)) 
+    drop-shadow(0px 100px 80px rgba(0, 0, 0, 7%)) 
+    grayscale(100%);
+}
+
+.member-info {
+    text-align: center;
+    line-height: 24px;
+}
+
+.member-name {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.member-position {
+    font-size: 12px;
+    font-weight: 600;
+    color: #7D8896;
+    text-transform: uppercase;
+}

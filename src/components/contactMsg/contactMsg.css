@@ -1,0 +1,50 @@
+.contact__message {
+    background: var(--color-primary);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 55px 217px;
+    text-align: center;
+    gap: 2rem;
+    color: var(--color-white);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: 8%;
+}
+
+
+
+/* ================================================== */
+/* =================== RESPONSIVE =================== */
+/* ================================================== */
+
+
+@media screen and (max-width:1075px) {
+
+    .contact__message {
+        padding: 55px 150px;
+    }
+
+}
+
+
+@media screen and (max-width:850px) {
+
+    .contact__message {
+        padding: 55px 100px;
+    }
+
+}
+
+
+
+@media screen and (max-width: 610px) {
+
+    .contact__message {
+        padding: 25px 50px;
+        font-size: 20px;
+        /* margin-top: 70px; */
+    }
+}
