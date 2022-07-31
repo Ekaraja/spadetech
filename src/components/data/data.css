@@ -1,7 +1,8 @@
 /* ================== DATA SECTION ================== */
 
 .data__container {
-    padding: 2.4rem 8%
+    padding: 2.4rem 8%;
+    background: #fff;
 }
 
 .data__list {

@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "../../components/header/Header";
 import ServicesSolutions from "../../components/services/ServicesSolutions";
 import ServicesDifferences from "../../components/services/ServicesDifferences";

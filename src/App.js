@@ -13,17 +13,22 @@ import About from './pages/about/About';
 function App() {
 	return (
 		<>
-			<Navbar />
-			<ScrollToTop>
-				<Routes>
-					<Route path="/" element={<Home />} />
-					<Route path="/services/security-audit" element={<Security />} />
-					<Route path="/services/consultancy" element={<Consultancy />} />
-					<Route path="/services/development" element={<Development />} />
-					<Route path="/about" element={<About />} />
-				</Routes>
-			</ScrollToTop>
-			<Footer />
+				<div className="header__wrapper">
+				<Navbar />
+				<main id="main">
+				<ScrollToTop>
+					<Routes>
+						<Route path="/" element={<Home />} />
+						<Route path="/services/security-audit" element={<Security />} />
+						<Route path="/services/consultancy" element={<Consultancy />} />
+						<Route path="/services/development" element={<Development />} />
+						<Route path="/about" element={<About />} />
+					</Routes>
+				</ScrollToTop>
+				
+				<Footer />
+				</main>
+				</div>
 		</>
 	);
 }

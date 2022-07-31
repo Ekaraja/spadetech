@@ -1,3 +1,7 @@
+.services-section, .container.services{
+    background: #fff;
+}
+
 .services-section p {
     font-size: 16px;
     line-height: 26px;
@@ -73,6 +77,7 @@
     .container {
         padding: 5.5rem;
     }
+
     .services-solutions {
         grid-template-columns: 1fr;
         gap: 1.5rem;
@@ -91,6 +96,7 @@
     .services-differences__container {
         padding: 0px;
     }
+
     .br {
         display: inline;
     }
@@ -98,10 +104,10 @@
 
 
 @media screen and (max-width: 710px) {
-    
+
     .container {
         padding: 2.5rem;
-    } 
+    }
 
     .services-solutions {
         grid-template-columns: 1fr;

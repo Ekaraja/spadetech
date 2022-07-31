@@ -42,22 +42,6 @@ h6 footer title
     --lh-heading-l: 4.75rem;
     --lh-heading-m: 3rem;
     --lh-heading-s: 1.625rem;
-    /* line height
-
-    heading: 
-        - 76px l
-        - 48px m
-        - 40px s
-
-    body :
-        - 47px xxl
-        - 40px xl
-        - 32px l
-        - 30px m
-        - 26px s
-        - 14px xs
-*/
-
     --color-primary: #08375B;
     /* section heading */
     --color-secondary: #4B4A4A;
@@ -101,7 +85,7 @@ a {
 
 .container {
     /* padding: 5.5rem 7.5rem; */
-    padding: 6.5% 9.5%;
+    padding: 5.875rem 9.5%;
 }
 
 h1 {
