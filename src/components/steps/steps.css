@@ -2,47 +2,47 @@
 .steps__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 40px;
+    gap: 2.5rem
 }
 
 .step__list {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem
 }
 
 .step {
     background: var(--color-white);
     display: flex;
     align-items: center;
-    gap: 24px;
-    padding: 24px;
-    border-radius: 4px;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: .25rem;
     cursor: pointer;
 }
 
 .step__count {
     font-family: var(--ff-secondary);
-    font-size: 14px;
-    line-height: 24px;
+    font-size: var(--fs-body-s);
+    line-height: var(--lh-body-m);
     color: #08375B99;
     text-transform: uppercase;
 }
 
 .step__intro {
     font-size: 22px;
-    font-weight: 500;
+    font-weight: var(--fw-medium);
 }
 
 
 .focus {
     box-shadow: 0px 5px 18px rgba(0, 0, 0, 0.08);
-    color: #08375B;
+    color: var(--color-secondary);
 }
 
 .step__answer {
     background-image: url(./../../assets/icons/step-bg.svg);
-    background-color: #08375B;
+    background-color: var(--color-secondary);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -51,7 +51,7 @@
     font-size: 32px;
     line-height: 48px;
     padding: 0 32px;
-    border-radius: 4px;
+    border-radius: .25rem;
     text-align: center;
 }
 
@@ -93,7 +93,7 @@
     }
 
     .step__intro{
-        font-size: 16px;
+        font-size: var(--fs-body-m);
         
     }
 

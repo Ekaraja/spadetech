@@ -17,7 +17,7 @@ const WorkSteps = () => {
 		setClicked(index);
 	};
     return (
-        <section className="container services-section text-center">
+        <section className="container services-section --text-center --white-bg">
             <h3 className="section__title">How We Work</h3>
             <p className="section__desc">
                 Our five-step audit methodology is designed to give you the most comprehensive

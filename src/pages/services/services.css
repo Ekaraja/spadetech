@@ -1,56 +1,16 @@
-.services-section, .container.services{
-    background: #fff;
+
+/* ================================================== */
+/* ===================== GLOBAL ===================== */
+/* ================================================== */
+
+.services-section h3 {
+    line-height: var(--lh-section-l);
 }
 
-.services-section p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-}
-
-.services-solutions {
-    display: grid;
-    grid-template-columns: 1fr 64px 1fr;
-    column-gap: 3.1875rem;
-    row-gap: 4rem;
-    align-items: center;
-}
-
-.services-works {
-    display: grid;
-    grid-template-columns: 165px 1fr;
-    gap: 90px;
-}
-
-
-/* NOT WORKING */
-.services-works h3 {
-    line-height: 56px;
-}
-
-.services-differences__container {
-    padding: 0 85px;
-    display: grid;
-    gap: 2rem;
-}
-
-
-.offers__list {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
-}
-
-.offers__list p {
-    border-left: 3px solid var(--color-active);
-    font-size: 16px;
-    line-height: 24px;
+.services-solutions, .offers__list, .services-differences__container{
+    font-size: var(--fs-body-m);
+    line-height: var(--lh-body-m);
     font-weight: var(--fw-semiBold);
-    padding-left: 20px;
-}
-
-.br {
-    display: none;
 }
 
 .next__btn {
@@ -58,6 +18,57 @@
     height: 64px;
     background-image: url('../../assets/icons/arrow.svg');
 }
+
+
+/* -------------- FIRST SECTION -------------- */
+.services-solutions {
+    display: grid;
+    grid-template-columns: 1fr 64px 1fr;
+    column-gap: 3.1875rem;
+    row-gap: 4rem;
+    align-items: center;
+
+}
+
+/* -------------- SECOND SECTION -------------- */
+
+.offers__list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+}
+
+.offers__list p {
+    border-left: 3px solid var(--color-primary);
+    padding-left: 1.25rem;
+}
+
+.services-works {
+    display: grid;
+    grid-template-columns: 165px 1fr;
+    gap: 5.625rem;
+}
+
+
+/* -------------- THIRD SECTION -------------- */
+
+/* .services-differences {
+    position: relative;
+} */
+
+.services-differences__container {
+    width: 87%;
+    display: grid;
+    gap: 2rem;
+    margin: auto;
+}
+
+
+.break {
+    display: none;
+}
+
+
 
 
 /* ================================================== */
@@ -68,7 +79,7 @@
 @media screen and (max-width:1075px) {
 
     .services-differences__container {
-        padding: 0 50px;
+        width: 90%;;
     }
 }
 
@@ -78,9 +89,16 @@
         padding: 5.5rem;
     }
 
-    .services-solutions {
+    .services-solutions, .offers__list {
         grid-template-columns: 1fr;
+    }
+
+    .services-solutions {
         gap: 1.5rem;
+    }
+    
+    .offers__list {
+        gap: 2rem;
     }
 
     .next__btn {
@@ -88,31 +106,20 @@
         transform: rotate(90deg);
     }
 
-    .offers__list {
-        grid-template-columns: 1fr;
-        gap: 32px;
-    }
-
     .services-differences__container {
-        padding: 0px;
+        width: 100%;
     }
-
-    .br {
+    .break {
         display: inline;
     }
 }
 
 
 @media screen and (max-width: 710px) {
-
+    
     .container {
         padding: 2.5rem;
-    }
-
-    .services-solutions {
-        grid-template-columns: 1fr;
-        gap: 1.5rem;
-    }
+    } 
 
     .next__btn {
         width: 48px;
@@ -122,22 +129,15 @@
         transform: rotate(0deg);
     }
 
-    .offers__list {
+    .services-works, .offers__list {
         grid-template-columns: 1fr;
-        gap: 32px;
     }
 
-    .services-works {
-        grid-template-columns: 1fr;
-        gap: 32px;
+    .offers__list, .services-works {
+        gap: 2rem;
     }
 
-    .services-differences {
-        gap: 16px;
-    }
-
-    .services-differences__container {
-        padding: 0px;
+    .services-differences, .services-differences__container {
         gap: 1rem;
     }
 
@@ -149,6 +149,6 @@
 
 @media screen and (max-width: 610px) {
     .services-section p {
-        font-size: .875rem
+        font-size: var(--fs-body-s)
     }
 }

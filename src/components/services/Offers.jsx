@@ -4,7 +4,7 @@ const Offers = ({ page }) => {
 
     return (
 
-        <section className="container services-section">
+        <section className="container services-section --white-bg ">
             <div className="services-works">
                 <h3 className="section__title">
                     What we offer

@@ -1,8 +1,13 @@
 /* ================== DATA SECTION ================== */
 
+.datas-section {
+    background: var(--color-white);
+}
 .data__container {
-    padding: 2.4rem 8%;
-    background: #fff;
+    padding: 2.4rem 0;
+    width: 80%;
+    margin: auto;
+    background-color: var(--color-white);
 }
 
 .data__list {
@@ -39,6 +44,10 @@
 }
 
 @media screen and (max-width: 610px) {
+
+    .data__container {
+        width: 90%;
+    }
 
     .data__list {
         grid-template-columns: repeat(2, 1fr);

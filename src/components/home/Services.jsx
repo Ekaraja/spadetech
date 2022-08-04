@@ -5,7 +5,7 @@ import Card from "../card/Card";
 
 function Services() {
     return (
-        <section className="container services">
+        <section className="container services --white-bg ">
             <h3 className="section__title">Our services</h3>
             <p className="section__desc">We make it easy for users to use our platform</p>
             <div className="services__container">

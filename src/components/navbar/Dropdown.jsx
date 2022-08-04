@@ -22,7 +22,7 @@ function Slidedown() {
 				<NavLink to="/services/development">Development</NavLink>
 			</MenuItem>
 			<MenuItem key="3">
-				<NavLink to="/services/security">Security</NavLink>
+				<NavLink to="/services/security-audit">Security</NavLink>
 			</MenuItem>
 		</Menu>
 	);

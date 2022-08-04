@@ -1,49 +1,107 @@
-
 .team-section {
+    position: relative;
+}
+
+.team__container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 220px;
-    background: #fff;
+    gap: 5rem;
+    padding: 150px 0 80px;
+    
 }
 
 .team-member {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 2.5rem;
+    background: transparent;
 }
 
 .member {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 22px;
-
+    gap: 1.375rem;
+    flex-basis: 16.66%;
 }
 
-.member-avatar { 
-    filter:  
-    drop-shadow(0px 2.77px 2.21px rgba(0, 0, 0, 1.97%))
-    drop-shadow(0px 6.65px 5.32px rgba(0, 0, 0, 2.83%)) 
-    drop-shadow(0px 12.52px 10.02px rgba(0, 0, 0, 3.5%)) 
-    drop-shadow(0px 22.34px 17.87px rgba(0, 0, 0, 4.17%)) 
-    drop-shadow(0px 41.78px 33.42px rgba(0, 0, 0, 5.03%)) 
-    drop-shadow(0px 100px 80px rgba(0, 0, 0, 7%)) 
-    grayscale(100%);
+
+
+.member-avatar  {     
+    filter:
+        drop-shadow(0px 2.77px 2.21px rgba(0, 0, 0, 1.97%)) drop-shadow(0px 6.65px 5.32px rgba(0, 0, 0, 2.83%)) drop-shadow(0px 12.52px 10.02px rgba(0, 0, 0, 3.5%)) drop-shadow(0px 22.34px 17.87px rgba(0, 0, 0, 4.17%)) drop-shadow(0px 41.78px 33.42px rgba(0, 0, 0, 5.03%)) drop-shadow(0px 100px 80px rgba(0, 0, 0, 7%)) grayscale(100%);
 }
 
 .member-info {
     text-align: center;
-    line-height: 24px;
+    line-height: var(--lh-body-m);
 }
 
 .member-name {
-    font-size: 16px;
-    font-weight: 500;
+    font-size: var(--fs-body-m);
+    font-weight: var(--fw-medium);
 }
 
 .member-position {
-    font-size: 12px;
-    font-weight: 600;
+    font-size: var(--fs-body-xs);
+    font-weight: var(--fw-semiBold);
     color: #7D8896;
     text-transform: uppercase;
+}
+
+
+
+/* ================================================== */
+/* =================== RESPONSIVE =================== */
+/* ================================================== */
+
+
+@media screen and (max-width: 1190px) {
+
+    .team-section {
+        gap: 15%;
+    }
+
+}
+
+@media screen and (max-width: 1120px) {
+
+    .team-section {
+        gap: 10%;
+    }
+
+}
+
+@media screen and (max-width: 980px) {
+
+    .team-section {
+        grid-template-columns: 1fr;
+        gap: 3.125rem;
+    }
+
+    .team__container  {
+        padding: 2rem 0;
+        grid-template-columns: 1fr;
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 610px) {
+
+    .team-member {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.25rem;
+    }
+
+}
+
+@media screen and (max-width: 375px) {
+
+    .team-member {
+        grid-template-columns: 1fr;
+    }
+
 }

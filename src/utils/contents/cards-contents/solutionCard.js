@@ -4,6 +4,7 @@ import honest from "../../../assets/icons/honest.svg";
 import secure from "../../../assets/icons/secure.svg";
 import efficient from "../../../assets/icons/efficient.svg";
 
+
 export const cardContent = [
 
     {

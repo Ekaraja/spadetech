@@ -10,12 +10,12 @@ import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import About from './pages/about/About';
 
+
 function App() {
 	return (
 		<>
-				<div className="header__wrapper">
+			<div className='header__wrapper'>
 				<Navbar />
-				<main id="main">
 				<ScrollToTop>
 					<Routes>
 						<Route path="/" element={<Home />} />
@@ -25,10 +25,8 @@ function App() {
 						<Route path="/about" element={<About />} />
 					</Routes>
 				</ScrollToTop>
-				
 				<Footer />
-				</main>
-				</div>
+			</div>
 		</>
 	);
 }

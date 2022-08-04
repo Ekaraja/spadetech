@@ -1,0 +1,124 @@
+
+
+.contact__container {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(24px);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 18px;
+    z-index: 10;
+}
+
+
+.contact__form {
+    padding: 32px;
+    width: 30%;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.contact__form h5 {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 46px;
+}
+
+.form__content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+
+.checkbox__container {
+    border: 2px solid red;
+    display: flex;
+    gap: 40px;
+}
+
+
+.input__container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.input {
+    width: 100%;
+}
+
+.input input, .input textarea {
+    width: 100%;
+    height: 100%;
+    padding: 14px 24px;
+    background: #F6F6F6;
+    border-radius: 4px;
+    border: none;
+}
+
+.input textarea {
+    resize: none;
+}
+
+.input input, .input textarea, .input input::placeholder, .input textarea::placeholder {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color:#464F60;
+    font-family: var(--ff-main);
+}
+
+
+.input textarea{
+    height: 180px;
+}
+
+.input input[type="text"] {
+    font-size: 14px;
+    line-height: 20;
+    font-weight: 500;
+    color:#464F60;
+}
+
+
+
+/* BUTTON */
+
+.close-btn {
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 0;
+}
+
+.close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.submit-btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.submit {
+    padding: 16px 32px;
+    color: var(--color-white);
+    background: var(--color-primary);
+    font-weight: var(--fw-bold);
+    font-size: 14px;
+    line-height: 16px;
+}

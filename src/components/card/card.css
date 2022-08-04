@@ -21,16 +21,8 @@
 }
 
 .card__icon {
-    width: 4rem;
     height: 4rem;
-    background: var(--color-bg-icon);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 0.625rem;
 }
-
-
 
 
 /* ================= CARD MODIFIER ================== */
@@ -39,31 +31,18 @@
 
 .white-card {
     background: var(--color-white);
+    color: var(--color-dark-gray);
     box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.08);
 }
 
-
-
 .red-card {
-    background: var(--color-active);
+    background: var(--color-primary);
     color: var(--color-white);
     box-shadow: 0px 8px 24px rgba(239, 121, 138, 0.4);
 }
 
 .red-card h4 {
     color: var(--color-white);
-}
-
-.red-card p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 600;
-}
-
-
-
-.gray-card p, .white-card p {
-    color: var(--color-secondary);
 }
 
 /* --------- FUNCTIONAL --------- */
@@ -77,7 +56,6 @@
 .icon--row-card {
     display: grid;
     grid-template-columns: 64px 1fr;
-    /* cgap: 2rem;    */
     column-gap: 2rem;
 }
 
@@ -96,6 +74,7 @@
 
     .icon--row-card {
         grid-template-columns: 1fr;
+        gap: 24px;
     }
     
 }

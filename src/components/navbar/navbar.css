@@ -4,6 +4,7 @@
     align-items: center;
     position: relative;
     padding: 2rem;
+    /* position: relative; */
 }
 
 
@@ -23,8 +24,8 @@
     padding: 1rem;
 }
 
-.nav__item:hover {
-    color: var(--color-active);
+.nav__item:hover , .active{
+    color: var(--color-primary);
 }
 
 .nav__item:hover.nav__item img {
@@ -54,6 +55,9 @@
     transition: all .3s;
 }
 
+/* .active {
+    color: var(--color-active)
+} */
 
 /* ================================================== */
 /* ==================== DROPDOWN ==================== */

@@ -6,9 +6,9 @@ const Header = ({header}) => {
 
 	return (
 		<>
-			<header className={header.img ?"header" : " about-header"}>
+			<header className={header.img ?"header" : "container about-header"}>
 				{header.url && <span className="url-path">{header.url}</span>}
-				<div className={header.img ? "container header__container" : "container about-header__container"}>
+				<div className={header.img ? "container header__container" : " about-header__container"}>
 					<div className="header__left">
 						{header.title}
 						<p className="header__desc--border">{header.content}</p>

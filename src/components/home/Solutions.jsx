@@ -3,7 +3,7 @@ import Card from "../card/Card";
 
 const Solutions = () => {
 	return (
-		<section className="container solutions gray-card ">
+		<section className="container solutions --light-gray-bg ">
 			<h3 className="section__title">Our solution for your business</h3>
 			<p className="section__desc">
 				We make it easy for users to use our platform, that’s why we provide the
